@@ -19,7 +19,7 @@ const Footer = () => {
             <div className={styles.logo_container}>
               <img src={logo} className={styles.logo} alt="logo" width={45} />
               <p className={`fs-4 ${styles.logo_name}`}>
-                Krishna <br /> Restaurant
+                Green <br /> Warriors
               </p>
             </div>
           </a>
@@ -29,13 +29,13 @@ const Footer = () => {
           <div className={styles.footer_list_heading}>GET IN TOUCH</div>
           <ul>
             <li>
-              <IoMail /> skrishna283@gmail.com
+              <IoMail /> greenwarriors@gmail.com
             </li>
             <li>
-              <IoMail /> devrajpujari292@gmail.com
+              <IoMail /> green123@gmail.com
             </li>
             <li>
-              <IoMail /> restoevents@krishna.in
+              <IoMail /> ecogreen232@krishna.in
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className=" mb-0 text-center">© 2024 Krishna Restaurant, Inc</p>
+      <p className=" mb-0 text-center">© 2024 Green Warriors, Inc</p>
       <div className={styles.footer_icons}>
         <FaInstagram className={styles.footer_icon} />
         <FaFacebook className={styles.footer_icon} />
