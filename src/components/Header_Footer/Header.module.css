@@ -1,0 +1,355 @@
+/* General Styles */
+.header {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(11, 113, 54, 0.6);
+  padding: 5px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.6s ease;
+}
+
+.scrolled {
+  background-color: rgb(47, 173, 100, 1);
+  /* opacity: 0.85; */
+}
+
+.header_container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+
+}
+
+/* logo div*/
+.logo img{
+  /* color: #333; */
+  /* border: 2px solid black; */
+  width: 100px;
+  height: 60px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* navigation div */
+.navigation {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.navigation ul {
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.navigation a {
+  text-decoration: none;
+  color: #fff; /* Text color */
+  font-weight: 700;
+  position: relative;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigation a:hover {
+  color: rgb(213, 213, 5);
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6347; /* Bottom border color */
+  transition: width 0.3s ease;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+.navigation a.activeLink{
+  color: rgb(213, 213, 5);
+}
+
+.navigation a.activeLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6347; /* Bottom border color */
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_bar input {
+  margin-top: 17px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search_bar button {
+  background-color: red;
+  height: 36px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action_buttons .btn {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.action_buttons .login {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.action_buttons .login:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.action_buttons .signup {
+  background: #28a745;
+  color: #fff;
+}
+
+.action_buttons .signup:hover {
+  background-color: #218838;  /* Darker Green */
+  color: #fff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navigation ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  /* .navigation ul.active {
+    display: flex;
+  } */
+
+  .search-bar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .action-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 18px;
+  }
+}
+
+
+
+/* 1. Red and Yellow (Energetic and Stimulating)
+Red and yellow are well-known appetite stimulants. They evoke excitement, warmth, and hunger, making them a perfect combination for restaurant websites.
+
+Background Color: #FF6347 (Tomato Red)
+Text Color: #FFFFFF (White)
+Hover Effect: #FFD700 (Gold/Yellow) 
+
+1. Classic Red and White
+A vibrant red button with a clean white text color can give a bold, attention-grabbing effect.
+
+Background Color: #FF6347 (Tomato Red)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of red - #FF4500 (Orange-Red)
+
+
+Here are some modern color combinations for buttons that can work well for a restaurant website. These combinations focus on making the buttons stand out, while aligning with professional and inviting themes for a restaurant.
+
+1. Classic Red and White
+A vibrant red button with a clean white text color can give a bold, attention-grabbing effect.
+
+Background Color: #FF6347 (Tomato Red)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of red - #FF4500 (Orange-Red)
+css
+Copy code
+.button {
+  background-color: #FF6347;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FF4500;
+}
+2. Green and White (Fresh and Healthy)
+This combination works well for promoting healthy options like salads, vegan food, or fresh meals.
+
+Background Color: #28A745 (Green)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of green - #218838
+
+
+
+
+Here are some modern color combinations for buttons that can work well for a restaurant website. These combinations focus on making the buttons stand out, while aligning with professional and inviting themes for a restaurant.
+
+1. Classic Red and White
+A vibrant red button with a clean white text color can give a bold, attention-grabbing effect.
+
+Background Color: #FF6347 (Tomato Red)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of red - #FF4500 (Orange-Red)
+css
+Copy code
+.button {
+  background-color: #FF6347;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FF4500;
+}
+2. Green and White (Fresh and Healthy)
+This combination works well for promoting healthy options like salads, vegan food, or fresh meals.
+
+Background Color: #28A745 (Green)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of green - #218838
+css
+Copy code
+.button {
+  background-color: #28A745;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+3. Orange and White (Energetic)
+A friendly and energetic color combination that creates a sense of excitement and action.
+
+Background Color: #FFA500 (Orange)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of orange - #FF8C00 (Dark Orange)
+
+
+4. Deep Blue and White (Trustworthy and Elegant)
+A blue color scheme gives a calm, trustworthy vibe, ideal for a formal restaurant environment.
+
+Background Color: #007BFF (Blue)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of blue - #0056b3
+
+
+5. Yellow and Dark Gray (Warm and Friendly)
+Yellow evokes warmth and is often associated with happiness and energy, while dark gray provides contrast.
+
+Background Color: #FFD700 (Gold/Yellow)
+Text Color: #333333 (Dark Gray)
+Hover Effect: Darker yellow shade - #FFC107
+css
+Copy code
+
+
+
+6. Soft Pink and White (Playful and Inviting)
+This combination gives a welcoming, soft vibe. It's great for dessert shops or cafes.
+
+Background Color: #FFB6C1 (Light Pink)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of pink - #FF69B4 (Hot Pink)
+
+
+7. Black and Gold (Luxury)
+Black and gold can evoke sophistication and luxury, making it perfect for high-end restaurants or fine dining.
+
+Background Color: #000000 (Black)
+Text Color: #FFD700 (Gold)
+Hover Effect: Lighter gold or champagne shade - #F1C40F (Light Gold)
+css
+Copy code
+
+
+
+8. Light Blue and White (Calming)
+This combination provides a fresh, calming look, ideal for coastal or seafood restaurants.
+
+Background Color: #ADD8E6 (Light Blue)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker blue shade - #4682B4 (Steel Blue)
+
+
+9. Purple and White (Creative and Elegant)
+A bold, creative color combination for a high-end or artistic restaurant vibe.
+
+Background Color: #8A2BE2 (Blue Violet)
+Text Color: #FFFFFF (White)
+Hover Effect: Darker shade of purple - #6A0DAD (Purple)
+
+
+10. White and Transparent (Minimalist Look)
+This is a modern minimalist look, ideal for sleek, clean website designs.
+
+Background Color: Transparent (No fill, only border)
+Text Color: #000000 (Black)
+Border Color: #000000 (Black)
+Hover Effect: Background fill with black color - #000000*/

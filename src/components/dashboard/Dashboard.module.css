@@ -1,0 +1,163 @@
+.dashboard {
+  padding: 20px;
+  padding-top: 100px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.greeting h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.greeting p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b;
+}
+
+.progress {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.ecoScore {
+  flex: 1;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.circularProgress {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(#27ae60 80%, #dcdcdc 80%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.achievements {
+  flex: 1;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievementBadges {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.achievement {
+  text-align: center;
+  color: #27ae60;
+}
+
+.points {
+  flex: 1;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.claimRewards {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.claimRewards:hover {
+  background: #219150;
+}
+
+.activityHistory {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activityHistory h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.activityList {
+  list-style: none;
+  padding: 0;
+}
+
+.activityItem {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}

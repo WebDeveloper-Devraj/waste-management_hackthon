@@ -1,0 +1,266 @@
+.galleryPage {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/************Hero Section Styles**************/
+.hero_section {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background Video */
+.video_background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Video stays behind the text */
+}
+
+/* Overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+/* Centered content (Text and buttons) */
+.content {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.content h1 {
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.cta_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* border: 2px solid black; */
+}
+
+.cta_btn {
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book_table {
+  background-color: #f23b1b; /* Tomato color */
+  color: white;
+}
+
+.book_table:hover {
+  background-color: #f92904;
+}
+
+.view_menu {
+  background-color: rgb(188, 188, 9); /* Blue color */
+  color: white;
+}
+
+.view_menu:hover {
+  background-color: rgb(140, 140, 1);
+}
+/*************Gallery Section style*************/
+.gallerySection {
+  position: relative;
+  background-color: #000;
+  padding: 20px 0;
+}
+/* Photo & Video Categories Section */
+.categoriesSection h2{
+  padding-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.categoriesSection h2::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 4px;
+  background-color: red;
+  border-radius: 2px;
+  top: 60px;
+  left:44%;
+}
+
+.categories {
+  display: flex-start;
+  padding:0 50px 20px 50px;
+}
+
+.categories button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categories button.active {
+  background: #c94b06;
+}
+
+.categories button:hover {
+  background: #c94b06;
+}
+
+.subCategories {
+  padding:0 50px 20px 50px;
+}
+
+.subCategories button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-weight: 700;
+}
+
+.subCategories button.active {
+  background-color: #a2ff00;
+}
+
+.subCategories button:hover {
+  background-color: #a2ff00;
+  color: #000;
+}
+
+/* media section style */
+
+.galleryItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 10px 0 30px;
+
+}
+
+.galleryItem {
+  /* border: 2px solid red; */
+  height: 50vh;
+  width: 25vw;
+}
+
+.galleryItem img,
+.galleryItem video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem:hover img,
+.galleryItem:hover video {
+  transform: scale(1.05);
+}
+
+/* Customer Highlights Section */
+.customerHighlightsSection {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.customerHighlightsHeader {
+  margin-bottom: 20px;
+}
+
+.customerHighlightsHeader h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.customerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.customerImage {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gallery Submission Section */
+.submissionSection {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.submissionHeader h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.submissionForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.submissionForm input,
+.submissionForm textarea,
+.submissionForm button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submissionForm button {
+  background-color: #ff7c5c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submissionForm button:hover {
+  background-color: #ff5733;
+}

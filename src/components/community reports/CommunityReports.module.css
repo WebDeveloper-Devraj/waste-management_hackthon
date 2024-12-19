@@ -1,0 +1,72 @@
+@import "leaflet/dist/leaflet.css";
+
+.communityReports {
+  padding: 20px;
+  padding-top: 90px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.formSection {
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.locationInput {
+  display: flex;
+  gap: 10px;
+}
+
+.locationInput input {
+  flex: 1;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #219150;
+}
+
+.mapSection {
+  margin-top: 20px;
+}
+
+.map {
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
